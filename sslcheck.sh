@@ -1,5 +1,4 @@
 #!/bin/bash
-# 检测https证书有效期
 dir_path="/usr/local/nginx/ssl"
 line=$(find "$dir_path"  -maxdepth 1 -type d -not -name "default" -not -name "ssl" -printf "%f\n" );
 for file in $line; do
