@@ -10,6 +10,6 @@ for file in $line; do
   days=`expr $left_time / 86400`
   if [ $days -lt 3 ];then
     /root/.acme.sh/acme.sh --renew -d  $file --force
-    systemctl restrt nginx
+    systemctl restart nginx
   fi
 done
